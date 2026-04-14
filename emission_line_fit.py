@@ -1288,8 +1288,8 @@ if __name__ == "__main__":
 
     # ---- shared data loading / preprocessing --------------------------------
     data, ivar, wav = load_data(args.fname)
-    data = downsample_cube_spatial(data, [1, 2], "flux", factor=3)
-    ivar = downsample_cube_spatial(ivar, [1, 2], "ivar", factor=3)
+    data = downsample_cube_spatial(data, [1, 2], "flux", factor=2)
+    ivar = downsample_cube_spatial(ivar, [1, 2], "ivar", factor=2)
 
     spectra, ivar_spectra, xy, wav = format_spectra(data, ivar, wav, args.z)
     wav = wav / (1 + args.z)

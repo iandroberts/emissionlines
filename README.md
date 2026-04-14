@@ -280,3 +280,5 @@ jax.config.update("jax_enable_x64", True)
 
 This doubles GPU memory usage and reduces throughput somewhat compared to
 float32, but is non-negotiable for correct sampling.
+
+![Spectral fit](figures/spectral_fit.png)

@@ -102,8 +102,7 @@ The script expects a FITS cube with:
 - HDU 1: flux cube (spectral axis first: `[λ, y, x]`)
 - HDU 2: inverse variance cube (same shape)
 
-The cube is spatially downsampled by a factor of 3 before fitting. The
-wavelength axis is trimmed to a rest-frame window of 6450–6700 Å and
+The wavelength axis is trimmed to a rest-frame window of 6450–6700 Å and
 de-redshifted. Pixels with narrowband S/N < 3 are excluded.
 
 ### Single-pixel diagnostic
